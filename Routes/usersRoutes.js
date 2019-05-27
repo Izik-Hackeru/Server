@@ -11,11 +11,9 @@ var userRoutes = function () {
 
     })
 
-    route.get('/allUsers', function(req, res){
+    route.get('/allUsers', clientController.getAll);
 
-    })
-
-
+    route.post('/login', clientController.login);
 
 
 

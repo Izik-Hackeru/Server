@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 var userRoute = require('./Routes/usersRoutes.js');
-app.use(bodyparser);
+app.use(bodyparser.json());
 app.use('/api/users', userRoute);
 
 const db_path = 'mongodb://localhost/insureapp';
